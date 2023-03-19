@@ -1,4 +1,5 @@
-class Ice extends LivingCreature{
+let Ice = require("./Ice")
+ module.exports = class Ice extends LivingCreature{
     constructor(x,y){
         super(x,y)
               this.energy = 19
@@ -43,7 +44,7 @@ class Ice extends LivingCreature{
 
   mul() {
       let emptyCell = this.chooseCell(0);
-      let newCell = random(emptyCell)
+      let newCell = emptyCell[Math.floor(Math.random()*emptyCell.length)]
  
       if (newCell && this.energy > 4) {
           let newX = newCell[0];
@@ -60,7 +61,7 @@ class Ice extends LivingCreature{
 
   eat() {
       let emptyCell = this.chooseCell(4);
-      let newCell = random(emptyCell)
+      let newCell = emptyCell[Math.floor(Math.random()*emptyCell.length)]
 
       if (newCell) {
           this.energy += 5;
@@ -99,7 +100,7 @@ class Ice extends LivingCreature{
 
   move() {
       let emptyCell = this.chooseCell(0);
-      let newCell = random(emptyCell)
+      let newCell = emptyCell[Math.floor(Math.random()*emptyCell.length)]
 
       if (newCell) {
           let newX = newCell[0];

@@ -1,4 +1,5 @@
-class Sun extends LivingCreature{
+let Sun = require("./Sun")
+module.exports = class Sun extends LivingCreature{
     constructor(x,y){
               super(x,y)
               this.energy = 10
@@ -41,7 +42,7 @@ class Sun extends LivingCreature{
 
   mul() {
       let emptyCell = this.chooseCell(0);
-      let newCell = random(emptyCell)
+      let newCell = emptyCell[Math.floor(Math.random()*emptyCell.length)]
  
       if (newCell && this.energy > 5) {
           let newX = newCell[0];
@@ -58,8 +59,7 @@ class Sun extends LivingCreature{
 
   eat() {
       let emptyCell = this.chooseCell(5);
-      let newCell = random(emptyCell)
-
+      let newCell = emptyCell[Math.floor(Math.random()*emptyCell.length)]
       if (newCell) {
           this.energy += 6;
           let newX = newCell[0];
@@ -97,8 +97,7 @@ class Sun extends LivingCreature{
 
   move() {
       let emptyCell = this.chooseCell(0);
-      let newCell = random(emptyCell)
-
+      let newCell = emptyCell[Math.floor(Math.random()*emptyCell.length)]
       if (newCell) {
           let newX = newCell[0];
           let newY = newCell[1];
