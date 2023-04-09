@@ -1,4 +1,5 @@
-let Jur = require("./Jur")
+
+let LivingCreature = require("./LivingCreature")
 module.exports = class Jur extends LivingCreature{
     constructor(x,y){
         super(x,y)

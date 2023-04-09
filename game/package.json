@@ -1,22 +1,57 @@
 {
-  "name": "gmeoflife",
+  "name": "game",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Anahit10/gameOflife.git"
-  },
-  "author": "Anahit",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Anahit10/gameOflife/issues"
-  },
-  "homepage": "https://github.com/Anahit10/gameOflife#readme",
+  "main": "LivingCreature.js",
   "dependencies": {
-    "express": "^4.18.2"
-  }
+    "base64id": "^2.0.0",
+    "content-disposition": "^0.5.4",
+    "array-flatten": "^1.1.1",
+    "cookie": "^0.5.0",
+    "cookie-signature": "^1.0.6",
+    "content-type": "^1.0.5",
+    "accepts": "^1.3.8",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "debug": "^2.6.9",
+    "engine.io": "^6.4.1",
+    "depd": "^2.0.0",
+    "engine.io-parser": "^5.0.6",
+    "etag": "^1.8.1",
+    "encodeurl": "^1.0.2",
+    "escape-html": "^1.0.3",
+    "fresh": "^0.5.2",
+    "methods": "^1.1.2",
+    "merge-descriptors": "^1.0.1",
+    "object-assign": "^4.1.1",
+    "http-errors": "^2.0.0",
+    "path-to-regexp": "^0.1.7",
+    "express": "^4.18.2",
+    "finalhandler": "^1.2.0",
+    "parseurl": "^1.3.3",
+    "proxy-addr": "^2.0.7",
+    "safe-buffer": "^5.2.1",
+    "serve-static": "^1.15.0",
+    "send": "^0.18.0",
+    "on-finished": "^2.4.1",
+    "qs": "^6.11.0",
+    "ms": "^2.1.2",
+    "range-parser": "^1.2.1",
+    "socket.io": "^4.6.1",
+    "socket.io-adapter": "^2.5.2",
+    "socket.io-parser": "^4.2.2",
+    "statuses": "^2.0.1",
+    "type-is": "^1.6.18",
+    "utils-merge": "^1.0.1",
+    "setprototypeof": "^1.2.0",
+    "vary": "^1.1.2",
+    "ws": "^8.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
 }
